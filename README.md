@@ -13,7 +13,8 @@ There are two main problems with this build
 	1) size of image and container. 
            Lets check the size of image: docker images 
 	        - The size of our image is astonishingly high which is above 1.2GB. 	
-		- We can’t ship the image of this size to production because of slower downloads. It takes longer  than usual to download this image over the network.
+		- We can’t ship the image of this size to production because of slower downloads 
+		  because it takes longer than usual to download this image over the network.
 	2) larger surface area.
            - Another problem is the larger surface area which is prone to attacks. 
            - We included npm dependencies and the entire Angular CLI library in the image which are
